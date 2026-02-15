@@ -118,7 +118,7 @@ function AuthScreen({ onAuth }) {
     setLoading(true); setError("");
     const { data, error: err } = await supabase.auth.signUp({
       email, password,
-      options: { data: { full_name: fullName } }
+      options: { data: { full_name: fullName, estado: estado, escuela: escuela, nivel_educativo: nivel } }
     });
     if (err) { setError(err.message); }
     else {
