@@ -4,7 +4,7 @@ import { createClient } from '@supabase/supabase-js';
 // ─── SUPABASE CONFIG ─────────────────────────────────────────
 const supabase = createClient(
   'https://yivtlsnqpttcbkkehjpm.supabase.co',
-  'sb_publishable_XeooSn0vg6f_LFo6p59SSw_zMa_xAwd'
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlpdnRsc25xcHR0Y2Jra2VoanBtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExMTgwMjUsImV4cCI6MjA4NjY5NDAyNX0.9glPAGpQv8QXzMYtKnZr2Fysh_E7cSipEVRBwGmN60M'
 );
 
 const COLORS = {
@@ -212,7 +212,6 @@ function AuthScreen({ onAuth }) {
                   <option value="Preescolar">Preescolar</option>
                   <option value="Primaria">Primaria</option>
                   <option value="Secundaria">Secundaria</option>
-                  <option value="Universitario">Universitario</option>
                   <option value="Otro">Otro</option>
                 </select>
               </div>
